@@ -20,9 +20,9 @@ def get_access_token(url,header):
     return access_token
 
 #main
-api_urlbase = "https://ws-cet-vidm1.vmware.com/SAAS/"
-clid = "gautam-client"
-clsecret = "LlhqFYhEJqfNJY5pxGAat6FVEoMXmsDCQCt5KAZgTzZFFWFZ"
+api_urlbase = "https://ws-cet-vidm1.#######/SAAS/"
+clid = "##############"
+clsecret = "##############"
 encodedtoken = get_encoded(clid, clsecret)
 extra = "auth/oauthtoken"
 headers = {'Content-Type' : 'application/x-www-form-urlencoded' , 'Authorization' : 'Basic %s' % encodedtoken}

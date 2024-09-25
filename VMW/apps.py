@@ -13,9 +13,9 @@ from pathlib import Path
 urllib3.disable_warnings()
 requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL:@SECLEVEL=1'
 
-apiurl = 'https://source-stg.vmware.com/intranet/api/ws1-index/?type=user'
-username = "ws1serviceuser"
-password = "ws1Service@User!23"
+apiurl = 'https://source-stg.#########/intranet/api/ws1-index/?type=user'
+username = "#########"
+password = "##############"
 
 basicAuth = username+":"+password
 basicAuth = basicAuth.encode('ascii')

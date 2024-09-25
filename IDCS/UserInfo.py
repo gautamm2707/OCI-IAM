@@ -27,9 +27,9 @@ def get_access_token(url,header):
     access_token = jsonresp.get('access_token')
     return access_token
 
-api_urlbase = "https://idcs-200f6c2f18a84fad83fb3b52eb0621b9.identity.oraclecloud.com"
-clid = "333fe9be1ad14e76907724d10061a1aa"
-clsecret = "61f20829-863b-4e0c-b816-40110d848a19"
+api_urlbase = "https://idcs-###################.identity.oraclecloud.com"
+clid = "################"
+clsecret = "####################"
 encodedtoken = get_encoded(clid, clsecret)
 #print (encodedtoken)
 extra = "/oauth2/v1/token"
@@ -47,7 +47,7 @@ def del_user(url,header2):
 
 #Getting Total count of users
 
-searchurl = "https://idcs-200f6c2f18a84fad83fb3b52eb0621b9.identity.oraclecloud.com/admin/v1/Users"
+searchurl = "https://idcs-###################.identity.oraclecloud.com/admin/v1/Users"
 headers2 = {'Authorization': 'Bearer ' + accesstoken}
 #headers2 = {'Accept': '*/*', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + accesstoken}
 #param = {'attributes': "Username,groups,emails"}
@@ -63,7 +63,7 @@ count = 50
 loop = int(totalCount / count)
 f_count = 0
 mainlist = []
-user_del_url = "https://idcs-200f6c2f18a84fad83fb3b52eb0621b9.identity.oraclecloud.com/admin/v1/Users/"
+user_del_url = "https://idcs-#################.identity.oraclecloud.com/admin/v1/Users/"
 for i in range(loop+1):
     param = {'attributes': "active,userName,emails", 'startIndex': startIndex, 'count': count}
     resp = requests.get(searchurl, headers=headers2, verify=False, params=param)

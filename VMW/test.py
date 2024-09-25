@@ -33,10 +33,10 @@ def get_auth_code(url1,clid1,redirect_uri):
 
 
 
-api_urlbase = "https://myvmware.workspaceair.com/SAAS/"
-clid = "079882bf-3638-d2c7-fb31-aa08ee9ea304"
-clsecret = "pCNdXsOPBpk3eAmYUSJ13iXWOEjxmYvO4nT5ic4QQnMev1Xh"
-redirect_uri = "https://lumberjack.apps.itcna.vmware.com/oauth"
+api_urlbase = "https://myvmware.######.com/SAAS/"
+clid = "###################"
+clsecret = "##################"
+redirect_uri = "https://lumberjack.apps.itcna.############/oauth"
 encodedtoken = get_encoded(clid, clsecret)
 extra1 = "auth/oauth2/authorize"
 extra2 = "auth/oauthtoken"
