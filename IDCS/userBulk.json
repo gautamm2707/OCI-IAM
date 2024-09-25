@@ -15,7 +15,7 @@
 	  	  "givenName": "AFENG",
 		  "familyName": "AFENG"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "AFENG",
 		"title": "Security Officer",
@@ -40,7 +40,7 @@
 	  	  "givenName": "AMARLIN",
 		  "familyName": "AMARLIN"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "AMARLIN",
 		"title": "GRC Reviewer",
@@ -65,7 +65,7 @@
 	  	  "givenName": "APOTTER",
 		  "familyName": "APOTTER"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "APOTTER",
 		"title": "Security Engineer",
@@ -90,7 +90,7 @@
 	  	  "givenName": "BWEBB",
 		  "familyName": "BWEBB"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "BWEBB",
 		"title": "Security Engineer",
@@ -115,7 +115,7 @@
 	  	  "givenName": "CBROWN",
 		  "familyName": "CBROWN"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "CBROWN",
 		"title": "Security Engineer",
@@ -141,7 +141,7 @@
 	  	  "givenName": "CONMGR",
 		  "familyName": "CONMGR"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "CONMGR",
 		"title": "Security Engineer",
@@ -167,7 +167,7 @@
 	  	  "givenName": "CONTMGR",
 		  "familyName": "CONTMGR"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "CONTMGR",
 		"title": "Security Engineer",
@@ -193,7 +193,7 @@
 	  	  "givenName": "CSADM",
 		  "familyName": "CSADM"
 	    },
-		"password":"Welcome@1234567890",
+		"password":"##########",
         "active": true,
 		"userName": "CSADM",
 		"title": "Security Engineer",

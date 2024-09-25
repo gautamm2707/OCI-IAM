@@ -15,16 +15,16 @@ identity_client = oci.identity.IdentityClient(config)
 # doc for more info
 create_domain_response = identity_client.create_domain(
     create_domain_details=oci.identity.models.CreateDomainDetails(
-        compartment_id="ocid1.compartment.oc1..aaaaaaaatsew3msijirazpzqlgfnxhk6ozgv4zngo7zqjgi4uqbeualbfltq",
-        display_name="chetantestdomain",
-        description="chetantestdomain",
+        compartment_id="ocid1.compartment.oc1..#############",
+        display_name="#########",
+        description="############",
         home_region="us-ashburn-1",
         license_type="Free",
         is_hidden_on_login=False,
-        admin_first_name="Chetan",
+        admin_first_name="#######",
         admin_last_name="Soni",
-        admin_user_name="chetan.soni@oracle.com",
-        admin_email="chetan.soni@oracle.com",
+        admin_user_name="##########",
+        admin_email="###########",
         is_notification_bypassed=False,
         is_primary_email_required=True))
 

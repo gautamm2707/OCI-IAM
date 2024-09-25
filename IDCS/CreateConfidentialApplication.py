@@ -44,7 +44,7 @@ print(accesstoken)
 
 #Create a confidential application
 
-#searchurl1 = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com/admin/v1/Apps"
+#searchurl1 = "https://idcs-###################.identity.oraclecloud.com/admin/v1/Apps"
 extra1 = "/admin/v1/Apps"
 headers1 = {'Accept': '*/*', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + accesstoken}
 para =json.dumps({
@@ -73,7 +73,7 @@ print(clientSecret)
 
 #Search for all approles in IDCS and obtain the approleID for Identity Domain Administrator
 
-#searchurl2 = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com/admin/v1/AppRoles"
+#searchurl2 = "https://idcs-###################.identity.oraclecloud.com/admin/v1/AppRoles"
 extra2 = "/admin/v1/AppRoles"
 headers2 = {'Accept': '*/*', 'Authorization': 'Bearer ' + accesstoken}
 response = requests.request("GET", idcsURL+extra2, headers=headers2)
@@ -92,7 +92,7 @@ for x in tempjsn:
 
 #Grant the Identity Domain Administrator Role to the Confidential app created above
 
-#searchurl3 = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com/admin/v1/Grants"
+#searchurl3 = "https://idcs-########################.identity.oraclecloud.com/admin/v1/Grants"
 extra3 = "/admin/v1/Grants"
 payload = json.dumps({
   "grantee": {

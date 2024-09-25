@@ -31,9 +31,9 @@ def get_access_token(url,header):
     access_token = jsonresp.get('access_token')
     return access_token
 
-api_urlbase = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com"
-clid = "3d878a2987f04d1f854d52ff1cdfa970"
-clsecret = "73c81b64-2811-41f6-8487-f2e06f3e94ef"
+api_urlbase = "https://idcs-###########.identity.oraclecloud.com"
+clid = "################"
+clsecret = "###############"
 encodedtoken = get_encoded(clid, clsecret)
 #print (encodedtoken)
 extra = "/oauth2/v1/token"
@@ -45,7 +45,7 @@ print(accesstoken)
 
 #Getting Total count of users and extracting id for each user
 
-searchurl = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com/admin/v1/Users"
+searchurl = "https://idcs-################.identity.oraclecloud.com/admin/v1/Users"
 headers2 = {'Authorization': 'Bearer ' + accesstoken}
 #headers2 = {'Accept': '*/*', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + accesstoken}
 param = {'attributes': "id"}
@@ -61,14 +61,14 @@ for x in tempjsn:
     mainlist.append(trimjsn)
 
     # Getting lastSuccessfulSetDate for each user
-    searchurl = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com/admin/v1/Users/"+id
+    searchurl = "https://idcs-################.identity.oraclecloud.com/admin/v1/Users/"+id
     headers2 = {'Authorization': 'Bearer ' + accesstoken}
     param = {'attributes': "urn:ietf:params:scim:schemas:oracle:idcs:extension:passwordState:User:lastSuccessfulSetDate"}
     resp = requests.get(searchurl, headers=headers2, verify=False, params=param)
     jsonresp = json.loads(resp.content)
     lssd = jsonresp.get("urn:ietf:params:scim:schemas:oracle:idcs:extension:passwordState:User")
     if "urn:ietf:params:scim:schemas:oracle:idcs:extension:passwordState:User" in jsonresp:
-        searchurl = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com/admin/v1/ApplicablePasswordPolicyRetriever"
+        searchurl = "https://idcs-#################.identity.oraclecloud.com/admin/v1/ApplicablePasswordPolicyRetriever"
         headers2 = {'Authorization': 'Bearer ' + accesstoken, 'Content-Type': 'application/json'}
         para = {"userName": username,"schemas": ["urn:ietf:params:scim:schemas:oracle:idcs:ApplicablePasswordPolicyRetriever"]}
         resp = requests.post(searchurl, headers=headers2, verify=False, data=para)

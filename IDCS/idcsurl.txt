@@ -1,1 +1,1 @@
-https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com
+https://idcs-############.identity.oraclecloud.com

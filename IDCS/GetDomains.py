@@ -20,7 +20,7 @@ identity_client = oci.identity.IdentityClient(config)
 # Send the request to service, some parameters are not required, see API
 # doc for more info
 get_domain_response = identity_client.get_domain(
-    domain_id="ocid1.domain.oc1..aaaaaaaarrrzrd5wl5zjohi5cgabk6pk5aujdpdiyat6ea55fjux5fdsdtva")
+    domain_id="ocid1.domain.oc1..################")
 
 # Get the data from response
 print(get_domain_response.data)

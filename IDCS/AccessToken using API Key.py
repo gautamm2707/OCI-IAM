@@ -5,15 +5,15 @@ import base64
 import os
 
 # Set the URL for the Identity domain endpoint
-url = 'https://identity.us-ashburn-1.oraclecloud.com' # replace {region} with your OCI region, e.g. us-phoenix-1
+url = 'https://i#########' # replace {region} with your OCI region, e.g. us-phoenix-1
 
 # Set the path to your OCI API private key file
 private_key_file = r'C:\Users\gautmish\%HOMEDRIVE%%HOMEPATH%\.oci\gautam.mishra@oracle.com_2023-03-24T20_20_54.268Z.pem'
 
 # Set the values for your OCI tenant, user, and compartment
-tenant_id = 'ocid1.tenancy.oc1..aaaaaaaakxcj247rl2tyoc6bsmexmcnku6x6ze4p55lqfobmww2rnrjbksiq'
-user_id = 'ocid1.user.oc1..aaaaaaaa5ubj2wares5m6up7mgt4vfx5v3eewipi62ka7553mvbzetx6gf5a'
-compartment_id = 'ocid1.compartment.oc1..aaaaaaaatsew3msijirazpzqlgfnxhk6ozgv4zngo7zqjgi4uqbeualbfltq'
+tenant_id = 'ocid1.tenancy.oc1..###################'
+user_id = 'ocid1.user.oc1..#############'
+compartment_id = 'ocid1.compartment.oc1..################'
 
 # Load the contents of the private key file
 with open(private_key_file, 'r') as f:

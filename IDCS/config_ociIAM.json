@@ -1,7 +1,7 @@
 {
-    "iamurl"         : "https://idcs-ff3532e3a9ba4bd7887f5cf49e2ae425.identity.oraclecloud.com",
-    "client_id"      : "b31fdb68e59b45d79dadd9f5b515c868",
-    "client_secret"  : "69b5847f-120b-4bde-b0e2-9b5d3318e16c",
-    "domain_id"      : "ocid1.domain.oc1..aaaaaaaaml5f54g4id4bcm5mzz4vfznqz4adky65ii6zxt7td6rzapzlq5ta",
-    "appid"          : "f758c61fefea4b12b7034d423ef95637"
+    "iamurl"         : "https://idcs-########.identity.oraclecloud.com",
+    "client_id"      : "##############",
+    "client_secret"  : "################",
+    "domain_id"      : "ocid1.domain.oc1..###############",
+    "appid"          : "##################"
 }
