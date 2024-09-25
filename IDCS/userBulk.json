@@ -1,0 +1,882 @@
+{
+  "schemas": [
+    "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
+  ],
+  "Operations": [
+    {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user1",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "AFENG",
+		  "familyName": "AFENG"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "AFENG",
+		"title": "Security Officer",
+		"emails": [
+		  {
+		    "value": "afeng@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user2",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "AMARLIN",
+		  "familyName": "AMARLIN"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "AMARLIN",
+		"title": "GRC Reviewer",
+		"emails": [
+		  {
+		    "value": "amarlin@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user3",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "APOTTER",
+		  "familyName": "APOTTER"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "APOTTER",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "APOTTER@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+	},
+	  {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user4",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "BWEBB",
+		  "familyName": "BWEBB"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "BWEBB",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "BWEBB@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+	  },
+	  {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user5",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "CBROWN",
+		  "familyName": "CBROWN"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "CBROWN",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "CBROWN@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+ {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user6",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "CONMGR",
+		  "familyName": "CONMGR"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "CONMGR",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "CONMGR@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+ {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user7",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "CONTMGR",
+		  "familyName": "CONTMGR"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "CONTMGR",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "CONTMGR@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	 {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user8",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "CSADM",
+		  "familyName": "CSADM"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "CSADM",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "CSADM@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user9",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "DBAKER",
+		  "familyName": "DBAKER"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "DBAKER",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "DBAKER@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user10",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "EBUSINESS",
+		  "familyName": "EBUSINESS"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "EBUSINESS",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "EBUSINESS@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user11",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "FBRAMER",
+		  "familyName": "FBRAMER"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "FBRAMER",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "FBRAMER@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user12",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "HRMS",
+		  "familyName": "HRMS"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "HRMS",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "HRMS@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user13",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "ILANG",
+		  "familyName": "ILANG"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "ILANG",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "ILANG@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user14",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "ISUPPORTADMIN",
+		  "familyName": "ISUPPORTADMIN"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "ISUPPORTADMIN",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "ISUPPORTADMIN@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user15",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "JFROST",
+		  "familyName": "JFROST"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "JFROST",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "JFROST@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user16",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "KJONES",
+		  "familyName": "KJONES"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "KJONES",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "KJONES@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user17",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "MFG",
+		  "familyName": "MFG"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "MFG",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "MFG@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user18",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "MGRMKT",
+		  "familyName": "MGRMKT"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "MGRMKT",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "MGRMKT@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user19",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "MNT",
+		  "familyName": "MNT"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "MNT",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "MNT@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user20",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "OPERATIONS",
+		  "familyName": "OPERATIONS"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "OPERATIONS",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "OPERATIONS@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user21",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "PHENRY",
+		  "familyName": "PHENRY"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "PHENRY",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "PHENRY@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user22",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "PIMMGR",
+		  "familyName": "PIMMGR"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "PIMMGR",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "PIMMGR@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user23",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "PLMMGR",
+		  "familyName": "PLMMGR"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "PLMMGR",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "PLMMGR@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user24",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "PROCESS_OPS",
+		  "familyName": "PROCESS_OPS"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "PROCESS_OPS",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "PROCESS_OPS@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user25",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "PROMFG",
+		  "familyName": "PROMFG"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "PROMFG",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "PROMFG@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user26",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "PSTOCK",
+		  "familyName": "PSTOCK"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "PSTOCK",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "PSTOCK@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user27",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "RBATES",
+		  "familyName": "RBATES"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "RBATES",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "RBATES@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user28",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "SCRIPTUSER",
+		  "familyName": "SCRIPTUSER"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "SCRIPTUSER",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "SCRIPTUSER@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user29",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "SERVICES",
+		  "familyName": "SERVICES"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "SERVICES",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "SERVICES@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user30",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "SFM",
+		  "familyName": "SFM"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "SFM",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "SFM@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user31",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "SPAIN",
+		  "familyName": "SPAIN"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "SPAIN",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "SPAIN@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+		{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user32",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "SVYADMIN",
+		  "familyName": "SVYADMIN"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "SVYADMIN",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "SVYADMIN@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+
+	{
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user33",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "TRADEMGR",
+		  "familyName": "TRADEMGR"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "TRADEMGR",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "TRADEMGR@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/Users",
+      "bulkId": "id_user34",
+      "data": {
+	    "schemas": [
+	      "urn:ietf:params:scim:schemas:core:2.0:User"
+	    ],
+	    "name": {
+	  	  "givenName": "BPALMER",
+		  "familyName": "BPALMER"
+	    },
+		"password":"Welcome@1234567890",
+        "active": true,
+		"userName": "BPALMER",
+		"title": "Security Engineer",
+		"emails": [
+		  {
+		    "value": "BPALMER@example.com",
+		    "type": "work",
+		    "primary": true
+		  }
+		]
+      }
+    }
+  ]
+}
