@@ -12,7 +12,7 @@ def get_access_token(url,header):
     jsonresp = json.loads(response.content)
     access_token = jsonresp.get('access_token')
     return access_token
-api_urlbase = "https://ws-cet-vidm1.#######/SAAS/"
+api_urlbase = "https://########.#######/SAAS/"
 clid = "##############"
 clsecret = "##############"
 encodedtoken = get_encoded(clid, clsecret)
@@ -21,7 +21,7 @@ headers = {'Content-Type' : 'application/x-www-form-urlencoded' , 'Authorization
 accesstoken = get_access_token(api_urlbase+extra,headers)
 print(accesstoken)
 users=[]
-usersearchurl="https://ws-cet-vidm1.vmware.com/SAAS/jersey/manager/api/scim/Users?filter=username%20eq%20%22gautamm%22"
+usersearchurl="https://#####.#######.com/SAAS/jersey/manager/api/scim/Users?filter=username%20eq%20%22gautamm%22"
 headers2 = {'Content-Type' : 'application/json' , 'Authorization' : 'Bearer ' + accesstoken}
 resp = requests.get(usersearchurl, headers=headers2,verify=False)
 print("API call completed")

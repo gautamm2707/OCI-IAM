@@ -13,15 +13,15 @@ def get_access_token(url,header):
     jsonresp = json.loads(response.content)
     access_token = jsonresp.get('access_token')
     return access_token
-api_urlbase = "https://ws-cet-vidm1.vmware.com/SAAS/"
-clid = "abhi-client"
-clsecret = "8vQ95VjRcOua7om7wPgyPbgiE4jRbF6hyoilnFurP1ljhNIi"
+api_urlbase = "https://ws-######.######.com/SAAS/"
+clid = "###########"
+clsecret = "############"
 encodedtoken = get_encoded(clid, clsecret)
 extra = "auth/oauthtoken"
 headers = {'Content-Type' : 'application/x-www-form-urlencoded' , 'Authorization' : 'Basic %s' % encodedtoken}
 accesstoken = get_access_token(api_urlbase+extra,headers)
 groups=[]
-groupsearchurl="https://ws-cet-vidm1.vmware.com/SAAS/jersey/manager/api/scim/Groups?sortBy=displayName&filter=domain eq \"System Domain\"&startIndex=0&pageSize=500"
+groupsearchurl="https://ws-c#######.#########.com/SAAS/jersey/manager/api/scim/Groups?sortBy=displayName&filter=domain eq \"System Domain\"&startIndex=0&pageSize=500"
 headers2 = {'Content-Type' : 'application/json' , 'Authorization' : 'Bearer ' + accesstoken}
 resp = requests.get(groupsearchurl, headers=headers2,verify=False)
 print("API call completed")

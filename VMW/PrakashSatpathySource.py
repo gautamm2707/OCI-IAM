@@ -13,9 +13,9 @@ lg.setLevel(logging.INFO)
 
 pSize = 1500
 
-tenant = "ws-cet-vidm1.vmware.com"
-user = "abhi-client"
-sharedSecret = "8vQ95VjRcOua7om7wPgyPbgiE4jRbF6hyoilnFurP1ljhNIi"
+tenant = "w############"
+user = "###########"
+sharedSecret = "############"
 # source_user = "ws1serviceuser"
 # source_password = "ws1Service@User!23"
 
@@ -47,14 +47,14 @@ source_secret_str_prod = source_secret_prod.decode("utf-8")"""
 
 def send_data_to_source(data):
     header = {}
-    header["X-Authorization"] = "Basic d3Mxc2VydmljZXVzZXI6d3MxU2VydmljZUBVc2VyITIz"
+    header["X-Authorization"] = "Basic ##################"
     header["Content-Type"] = "application/json"
     header["Accept"] = "text/plain"
-    API_stg = "https://source-stg.vmware.com/intranet/api/ws1-sourcex"
-    #  API_prod = "https://source.vmware.com/intranet/api/ws1-sourcex"
+    API_stg = "https://###########.com/intranet/api/ws1-sourcex"
+    #  API_prod = "https://#########com/intranet/api/ws1-sourcex"
     #  r = requests.request('POST', API, headers=header, data=json.dumps(data))
     r_stg = requests.request('POST', API_stg, headers=header, data=json.dumps(data), verify=False)
-    API_prod = "https://source.vmware.com/intranet/api/ws1-sourcex"
+    API_prod = "https://#############.com/intranet/api/ws1-sourcex"
     r_prod = requests.request('POST', API_prod, headers=header, data=json.dumps(data), verify=False)
     print(r_prod)
     print(r_prod.text)
@@ -83,7 +83,7 @@ def getData():
 def getKey():
     header = {'Content-Type': "application/x-www-form-urlencoded"}
     data = {'grant_type': 'client_credentials'}
-    r = requests.post('https://ws-cet-vidm1.vmware.com/SAAS/auth/oauthtoken', headers=header, params=data,
+    r = requests.post('https://############com/SAAS/auth/oauthtoken', headers=header, params=data,
                       auth=(user, sharedSecret), verify=False)
     token = r.json()['access_token']
     return token
@@ -96,7 +96,7 @@ def getKey():
 
     data = {'grant_type': 'client_credentials'}
 
-    u = "http://sourcex-stg.vmware.com/intranet/api/auth/oauthtoken"
+    u = "http://#############.com/intranet/api/auth/oauthtoken"
 
     r = requests.request('POST', u, headers=header, params=data)
     token_source = r.json()['access_token']

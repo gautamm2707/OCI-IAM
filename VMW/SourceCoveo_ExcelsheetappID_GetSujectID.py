@@ -25,16 +25,16 @@ def get_access_token(url,header):
     access_token = jsonresp.get('access_token')
     return access_token
 
-api_urlbase = "https://myvmware.workspaceair.com/SAAS/"
-clid = "gm_cli"
-clsecret = "5FwnIOUlTRle0KjwuIizJvqwJPuJHfUP96IbpQWb19w1oW8k"
+api_urlbase = "https://###########.com/SAAS/"
+clid = "##########"
+clsecret = "###############"
 encodedtoken = get_encoded(clid, clsecret)
 extra = "auth/oauthtoken"
 headers = {'Content-Type' : 'application/x-www-form-urlencoded' , 'Authorization' : 'Basic %s' % encodedtoken}
 accesstoken = get_access_token(api_urlbase+extra, headers)
 #print(accesstoken)
 
-searchurl = "https://myvmware.workspaceair.com/SAAS/jersey/manager/api/catalogitems/search?startIndex=0&pageSize=1500"
+searchurl = "https://##############.com/SAAS/jersey/manager/api/catalogitems/search?startIndex=0&pageSize=1500"
 headers2 = {'Authorization': 'Bearer ' + accesstoken, 'Accept': 'application/vnd.vmware.horizon.manager.catalog.item.list+json' , 'Content-Type': 'application/vnd.vmware.horizon.manager.catalog.search+json'}
 print(rows1)
 #Getting Apps
@@ -70,7 +70,7 @@ for i in range(1, rows1+1):
     #print(trimjson)
     print(name)
 
-    u = "https://myvmware.workspaceair.com/SAAS/jersey/manager/api/entitlements/definitions/catalogitems/" + uuid
+    u = "https://############.com/SAAS/jersey/manager/api/entitlements/definitions/catalogitems/" + uuid
     headers3 = {'Authorization': 'Bearer ' + accesstoken,
                 'Accept': 'application/vnd.vmware.horizon.manager.entitlements.v2.definition.list+json',
                 'Content-Type': 'application/vnd.vmware.horizon.manager.entitlements.v2.definition.list+json'}

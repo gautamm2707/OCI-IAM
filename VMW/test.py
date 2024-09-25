@@ -33,10 +33,10 @@ def get_auth_code(url1,clid1,redirect_uri):
 
 
 
-api_urlbase = "https://myvmware.######.com/SAAS/"
+api_urlbase = "https://#########.######.com/SAAS/"
 clid = "###################"
 clsecret = "##################"
-redirect_uri = "https://lumberjack.apps.itcna.############/oauth"
+redirect_uri = "https://######.apps.#####.############/oauth"
 encodedtoken = get_encoded(clid, clsecret)
 extra1 = "auth/oauth2/authorize"
 extra2 = "auth/oauthtoken"

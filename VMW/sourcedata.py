@@ -18,9 +18,9 @@ def get_access_token(url,header):
     return access_token
 
 def getData():
-    api_urlbase = "https://ws-cet-vidm1.vmware.com/SAAS/"
-    clid = "abhi-client"
-    clsecret = "8vQ95VjRcOua7om7wPgyPbgiE4jRbF6hyoilnFurP1ljhNIi"
+    api_urlbase = "https://########.########.com/SAAS/"
+    clid = "###########"
+    clsecret = "#############"
     encodedtoken = get_encoded(clid, clsecret)
     extra = "auth/oauthtoken"
     headers = {'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': 'Basic %s' % encodedtoken}
@@ -61,16 +61,16 @@ def main(appData):
 
 
 
-"""api_urlbase = "https://ws-cet-vidm1.vmware.com/SAAS/"
-clid = "abhi-client"
-clsecret = "8vQ95VjRcOua7om7wPgyPbgiE4jRbF6hyoilnFurP1ljhNIi"
+"""api_urlbase = "https://############.com/SAAS/"
+clid = "###########"
+clsecret = "###############"
 encodedtoken = get_encoded(clid, clsecret)
 extra = "auth/oauthtoken"
 headers = {'Content-Type' : 'application/x-www-form-urlencoded' , 'Authorization' : 'Basic %s' % encodedtoken}
 accesstoken = get_access_token(api_urlbase+extra,headers)
 
 groups=[]
-groupsearchurl="https://ws-cet-vidm1.vmware.com/SAAS/jersey/manager/api/catalogitems/search?startIndex=0&pageSize=1500&sortBy=displayName
+groupsearchurl="https://############.com/SAAS/jersey/manager/api/catalogitems/search?startIndex=0&pageSize=1500&sortBy=displayName
 headers2 = {'Content-Type' : 'application/json' , 'Authorization' : 'Bearer ' + accesstoken}
 resp = requests.get(groupsearchurl, headers=headers2,verify=False)
 print("API call completed")

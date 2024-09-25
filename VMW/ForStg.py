@@ -22,7 +22,7 @@ def get_access_token(url,header):
     access_token = jsonresp.get('access_token')
     return access_token
 
-api_urlbase = "https://myvmware-stg.#########/SAAS/"
+api_urlbase = "https://#####.#########/SAAS/"
 clid = "g######"
 clsecret = "##################"
 encodedtoken = get_encoded(clid, clsecret)
@@ -62,7 +62,7 @@ for i in tempjsn:
     print(name)
     print(c)
 #toextractsubjectids
-    u = "https://myvmware-stg.########.########/SAAS/jersey/manager/api/entitlements/definitions/catalogitems/"+appId
+    u = "https://######.########.########/SAAS/jersey/manager/api/entitlements/definitions/catalogitems/"+appId
     headers3 = {'Authorization': 'Bearer ' + accesstoken,
                 'Accept': 'application/vnd.vmware.horizon.manager.entitlements.v2.definition.list+json',
                 'Content-Type': 'application/vnd.vmware.horizon.manager.entitlements.v2.definition.list+json'}

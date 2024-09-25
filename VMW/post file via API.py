@@ -1,9 +1,9 @@
 import requests
 import base64
 
-apiurl = 'https://sourcex-dev.vmware.com/intranet/api/ws1-index/?type=user'
-username = "ws1serviceuser"
-password = "ws1@serviceP"
+apiurl = 'https://######.com/intranet/api/ws1-index/?type=user'
+username = "#######"
+password = "ws1@#######"
 
 basicAuth = username+":"+password
 basicAuth = basicAuth.encode('ascii')

@@ -15,9 +15,9 @@ import subprocess
 urllib3.disable_warnings()
 
 # Source Coveo API details
-apiurl = 'https://sourcex-dev.vmware.com/intranet/api/ws1-index/?type=user'
-username = "ws1serviceuser"
-password = "ws1@serviceP"
+apiurl = 'https://############.com/intranet/api/ws1-index/?type=user'
+username = "############"
+password = "###########"
 
 basicAuth = username + ":" + password
 basicAuth = basicAuth.encode('ascii')
@@ -42,7 +42,7 @@ def get_access_token(url, header):
 
 
 def print_access_token(clid, clsecret):
-    api_urlbase = "https://myvmware.workspaceair.com/SAAS/"
+    api_urlbase = "https://###############.com/SAAS/"
     encodedtoken = get_encoded(clid, clsecret)
     extra = "auth/oauthtoken"
     headers = {'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': 'Basic %s' % encodedtoken}
@@ -111,9 +111,9 @@ print(user_zip_file)
 
 
 def main(event, lambda_context):
-    clid = "gm_cli"
-    clsecret = "5FwnIOUlTRle0KjwuIizJvqwJPuJHfUP96IbpQWb19w1oW8k"
-    searchurl = "https://myvmware.workspaceair.com/SAAS/jersey/manager/api/scim/Users"
+    clid = "##########"
+    clsecret = "#############"
+    searchurl = "https://################/SAAS/jersey/manager/api/scim/Users"
 
     param = {'attributes': "Username,groups,emails"}
     access_token = print_access_token(clid, clsecret)

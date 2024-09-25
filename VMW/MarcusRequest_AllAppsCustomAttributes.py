@@ -23,9 +23,9 @@ def get_access_token(url,header):
     return access_token
 
 #main
-api_urlbase = "https://myvmware.workspaceair.com/SAAS/"
-clid = "gm_cli"
-clsecret = "5FwnIOUlTRle0KjwuIizJvqwJPuJHfUP96IbpQWb19w1oW8k"
+api_urlbase = "https://######.########.com/SAAS/"
+clid = "##########"
+clsecret = "###########"
 encodedtoken = get_encoded(clid, clsecret)
 extra = "auth/oauthtoken"
 headers = {'Content-Type' : 'application/x-www-form-urlencoded' , 'Authorization' : 'Basic %s' % encodedtoken}
@@ -33,7 +33,7 @@ accesstoken = get_access_token(api_urlbase+extra, headers)
 print(accesstoken)
 
 #Getting Apps ID
-searchurl = "https://myvmware.workspaceair.com/SAAS/jersey/manager/api/catalogitems/search?startIndex=0&pageSize=2000"
+searchurl = "https://######.########.com/SAAS/jersey/manager/api/catalogitems/search?startIndex=0&pageSize=2000"
 headers2 = {'Authorization': 'Bearer ' + accesstoken, 'Accept': 'application/vnd.vmware.horizon.manager.catalog.item.list+json' , 'Content-Type': 'application/vnd.vmware.horizon.manager.catalog.search+json'}
 data = '{"includeTypes":["Saml11","Saml20","WSFed12","WebAppLink", "AnyApp"], "categories":[], "rootResource":"false" }'
 resp = requests.post(searchurl, headers=headers2, verify=False, data=data)

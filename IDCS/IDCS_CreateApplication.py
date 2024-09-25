@@ -29,9 +29,9 @@ def get_access_token(url,header):
     access_token = jsonresp.get('access_token')
     return access_token
 
-api_urlbase = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com"
-clid = "3d878a2987f04d1f854d52ff1cdfa970"
-clsecret = "73c81b64-2811-41f6-8487-f2e06f3e94ef"
+api_urlbase = "https://idcs-395#########.identity.oraclecloud.com"
+clid = "###########"
+clsecret = "###############"
 encodedtoken = get_encoded(clid, clsecret)
 extra = "/oauth2/v1/token"
 headers = {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'Authorization': 'Basic %s' % encodedtoken, 'Accept': '*/*'}
@@ -40,7 +40,7 @@ print(accesstoken)
 
 #Create a confidential application
 
-searchurl = "https://idcs-39511659571c4cfe9f827e9a156d3e97.identity.oraclecloud.com/admin/v1/Apps"
+searchurl = "https://idcs-##################.identity.oraclecloud.com/admin/v1/Apps"
 headers2 = {'Accept': '*/*', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + accesstoken}
 para =json.dumps({
   "schemas": ["urn:ietf:params:scim:schemas:oracle:idcs:App"],

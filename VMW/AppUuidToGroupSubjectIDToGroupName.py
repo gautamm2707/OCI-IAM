@@ -23,9 +23,9 @@ def get_access_token(url,header):
     access_token = jsonresp.get('access_token')
     return access_token
 
-api_urlbase = "https://myvmware.workspaceair.com/SAAS/"
-clid = "gm_cli"
-clsecret = "5FwnIOUlTRle0KjwuIizJvqwJPuJHfUP96IbpQWb19w1oW8k"
+api_urlbase = "https://myvmware.##########.com/SAAS/"
+clid = "##########"
+clsecret = "###############"
 encodedtoken = get_encoded(clid, clsecret)
 extra = "auth/oauthtoken"
 headers = {'Content-Type' : 'application/x-www-form-urlencoded' , 'Authorization' : 'Basic %s' % encodedtoken}
@@ -33,7 +33,7 @@ accesstoken = get_access_token(api_urlbase+extra, headers)
 print(accesstoken)
 
 
-searchurl = "https://myvmware.workspaceair.com/SAAS/jersey/manager/api/reporting/reports/appentitlement"
+searchurl = "https://myvmware.##############.com/SAAS/jersey/manager/api/reporting/reports/appentitlement"
 headers2 = {'Authorization' : 'Bearer ' + accesstoken}
 
 #For Testing with Test Application
